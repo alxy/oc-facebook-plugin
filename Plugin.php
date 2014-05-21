@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Facebook',
             'description' => 'Add buttons to your website to help your visitors share content and connect on Facebook.',
-            'author'      => 'alxy',
+            'author'      => 'Alexander Guth',
             'icon'        => 'icon-facebook'
         ];
     }
