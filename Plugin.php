@@ -32,6 +32,7 @@ class Plugin extends PluginBase
             'Alxy\Facebook\Components\Follow' => 'follow',
             'Alxy\Facebook\Components\Comments' => 'comments',
             'Alxy\Facebook\Components\AppIdMeta' => 'appIdMeta',
+            'Alxy\Facebook\Components\SDK' => 'sdk',
         ];
     }
 
