@@ -31,6 +31,7 @@ class Plugin extends PluginBase
             'Alxy\Facebook\Components\Send' => 'send',
             'Alxy\Facebook\Components\Follow' => 'follow',
             'Alxy\Facebook\Components\Comments' => 'comments',
+            'Alxy\Facebook\Components\AppIdMeta' => 'appIdMeta',
         ];
     }
 
