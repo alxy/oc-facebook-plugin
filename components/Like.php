@@ -1,7 +1,7 @@
 <?php namespace Alxy\Facebook\Components;
 
 use Cms\Classes\ComponentBase;
-use HTML;
+use Html;
 use Alxy\Facebook\Models\Settings;
 
 class Like extends ComponentBase
@@ -117,7 +117,7 @@ class Like extends ComponentBase
                     "ch" => "Chamorro",
                     "co" => "Corsican",
                     "cr" => "Cree",
-                    "cs" => "Czech",
+                    "cs_CZ" => "Czech",
                     "cu" => "Church Slavic",
                     "cv" => "Chuvash",
                     "cy" => "Welsh",
@@ -296,7 +296,7 @@ class Like extends ComponentBase
                     break;
             }
         });
-        $this->attributes = HTML::attributes($attributes);
+        $this->attributes = Html::attributes($attributes);
         $this->lang = $this->property('lang');
         $this->appId = Settings::get('app_id');
     }
