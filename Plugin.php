@@ -7,7 +7,6 @@ use System\Classes\PluginBase;
  */
 class Plugin extends PluginBase
 {
-
     /**
      * Returns information about this plugin.
      *
@@ -19,18 +18,19 @@ class Plugin extends PluginBase
             'name'        => 'Facebook',
             'description' => 'Add buttons to your website to help your visitors share content and connect on Facebook.',
             'author'      => 'Alexander Guth',
-            'icon'        => 'icon-facebook'
+            'icon'        => 'icon-facebook',
+            'homepage'    => 'https://github.com/alxy/oc-facebook-plugin'
         ];
     }
 
     public function registerComponents()
     {
         return [
-            'Alxy\Facebook\Components\Like' => 'like',
-            'Alxy\Facebook\Components\Share' => 'share',
-            'Alxy\Facebook\Components\Send' => 'send',
-            'Alxy\Facebook\Components\Follow' => 'follow',
-            'Alxy\Facebook\Components\Comments' => 'comments',
+            'Alxy\Facebook\Components\Like'     => 'like',
+            'Alxy\Facebook\Components\Share'    => 'share',
+            'Alxy\Facebook\Components\Send'     => 'send',
+            'Alxy\Facebook\Components\Follow'   => 'follow',
+            'Alxy\Facebook\Components\Comments' => 'comments'
         ];
     }
 
@@ -47,5 +47,4 @@ class Plugin extends PluginBase
             ]
         ];
     }
-
 }
